@@ -19,7 +19,7 @@ module Russian
   autoload :Transliteration, 'transliteration'
 
   # Russian locale
-  LOCALE = :'ru'
+  LOCALE = :'uk'
 
   # Russian locale
   def locale

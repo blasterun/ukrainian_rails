@@ -4,7 +4,7 @@
 #
 # Названия месяцев и дней недели в зависимости от контекста ("1 декабря", но "Декабрь 1985")
 {
-  :ru => {
+  :uk => {
     :date => {
       :abbr_day_names => lambda { |key, options|
         if options[:format] && options[:format] =~ Russian::LOCALIZE_STANDALONE_ABBR_DAY_NAMES_MATCH
