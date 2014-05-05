@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["glebtv@gmail.com", "yaroslav@markin.net"]
   spec.description   = %q{Russian language support for Ruby and Rails}
   spec.summary       = %q{Russian language support for Ruby and Rails}
-  spec.homepage      = "https://github.com/rs-pro/russian"
+  spec.homepage      = "https://github.com/blasterun/ukrainian_rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
