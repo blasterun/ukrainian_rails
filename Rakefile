@@ -1,12 +1,10 @@
-require 'bundler/setup'
-Bundler::GemHelper.install_tasks
-
+require 'rubygems'
 require 'rspec/core/rake_task'
-
-desc "Run all examples"
-RSpec::Core::RakeTask.new(:spec) do |t|
-  #t.rspec_path = 'bin/rspec'
-  t.rspec_opts = %w[--color]
-end
+require 'rubygems/specification'
 
 task :default => :spec
+desc "Run specs"
+RSpec::Core::RakeTask.new do |t|
+  t.pattern = FileList['spec/**/*_spec.rb']
+  t.rspec_opts = %w(-fs --color)
+end
