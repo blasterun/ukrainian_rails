@@ -7,7 +7,7 @@
 # (использовать обычный механизм и таблицу транслитерации I18n с
 # русским языком не получится)
 {
-  :ru => {
+  :uk => {
     :i18n => {
       :transliterate => {
         :rule => lambda { |str| Russian.transliterate(str) }
