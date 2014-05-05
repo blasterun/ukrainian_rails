@@ -5,7 +5,7 @@ require File.dirname(__FILE__) + '/spec_helper'
 describe Russian do
   describe "with locale" do
     it "should define :'ru' LOCALE" do
-      Russian::LOCALE.should == :'ru'
+      Russian::LOCALE.should == :'uk'
     end
 
     it "should provide 'locale' proxy" do
@@ -28,7 +28,7 @@ describe Russian do
     it "should keep existing :ru translations while switching backends" do
       I18n.load_path << File.join(File.dirname(__FILE__), 'fixtures', 'ru.yml')
       Russian.init_i18n
-      I18n.t(:'date.formats.default', :locale => :'ru').should == "override"
+      I18n.t(:'date.formats.default', :locale => :'uk').should == "override"
     end
 
     it "should NOT set default locale to Russian locale" do
