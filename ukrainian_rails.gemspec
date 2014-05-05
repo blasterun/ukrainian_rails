@@ -5,7 +5,7 @@ require 'ukrainian/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ukrainian_rails"
-  spec.version       = Ukrainian::VERSION
+  s.version          = "0.0.1"
   spec.authors       = ["glebtv", "Yaroslav Markin"]
   spec.email         = ["glebtv@gmail.com", "yaroslav@markin.net"]
   spec.description   = %q{Ukrainian language support for Ruby and Rails}
